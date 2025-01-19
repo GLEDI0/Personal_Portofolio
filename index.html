@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home & About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education & Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="home-content">
+                <h1>Pershendetje, Une Quhem <br>Gledio Ndregjoni</h1>
+                <p>Student per Computer Science</p>
+                <p>Jam i apasionuar pas software development dhe konkretisht jam duke ndjekur studimet mbi Computer Science. <br> 
+                Me pelqn te krijoj aplikacione qe ndikojn ne jeten e perditeshme</p>
+            </div>
+        </section>
+
+        
+    </header>
+
+    <!-- Projekt Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="Screenshot 2024-05-28 1239322.png" alt="Student Management System">
+                <h3>Student Management System</h3>
+                <p>Nje program C# e krijuar me Windows Forms per menaxhimin e the dhenave te studenteve</p>
+                <button onclick="showProjectDetails()">View Project</button>
+            </div>
+        </div>
+    </section>
+    <div id="project-top" class="top">
+        <div class="top-content">
+            <span class="close">&times;</span>
+            <h2>Student Management System</h2>
+            <div class="project-details">
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education & Experience</h2>
+        <div class="ed">
+            <div class="teDhena">
+                <h3>University</h3>
+                <p>Bachelor ne Computer Science</p>
+                <p>Konkretisht jam Student i vitit te 2</p>
+            </div>
+            <div class="teDhena">
+                <h3>Gjimnaz Pofesional</h3>
+                <p>Gjergj Canco</p>
+                <p>Diplomimi ne  vitin 2023</p>
+            </div>
+            <div class="teDhena">
+                <h3>Experience</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>C# Programming </li>
+                    <li>C++ Programming </li>
+                    <li>Java</li>
+                    <li>Database Management </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- kontakt Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://example.com/contact" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gledio Ndregjoni. All rights reserved.</p>
+        <p>Connect with me: <button onclick="location.href='https://github.com/GLEDI0'" class="contact-button">GitHub</button></p>
+    </footer>
+</body>
+</html>
